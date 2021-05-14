@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>EM BREVE</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap" rel="stylesheet">
+      <style type="text/css">
+         *{
+            padding: 0px;
+            margin: 0px;
+            border: 0px;
+         }
+         body{
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 5px;
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(to right, #8e2de2, #4a00e0);
+            overflow: hidden;
+         }
+         #um{
+            width: 10%;
+            position: absolute;
+            top: 20%;
+            left: 80%;
+            transform: translate(-50%, -50%);
+         }
+         #dois{
+            width: 15%;
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+         }
+         #tres{
+            width: 20%;
+            position: absolute;
+            top: 80%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+         }
+         #quatro{
+            width: 15%;
+            position: absolute;
+            top: 30%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+         }
+         #cinco{
+            width: 15%;
+            position: absolute;
+            top: 90%;
+            left: 15%;
+            transform: translate(-50%, -50%);
+         }
+         #seis{
+            width: 20%;
+            position: absolute;
+            top: 65%;
+            left: 85%;
+            transform: translate(-50%, -50%);
+         }
+         #embreve {
+            text-align: center;
+            background: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 2vw;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+         }
+         #embreve h1 {
+            font-size: 5vw;
+            font-weight: 800;
+            background: linear-gradient(to right, #8e2de2, #4a00e0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+         }
+         #embreve h2 {
+            font-size: 2.2vw;
+            font-weight: 200;
+            background: linear-gradient(to right, #8e2de2, #4a00e0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+         }
+         #header-shape-gradient{
+            --color-stop: #7F00FF;
+            --color-bot: #E100FF;
+         }
+         .noisy {
+            -webkit-background-clip: text;
+            background-image: url(data:image/png;base64,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);  
+} 
+
+      </style>
+   </head>
+   <body>
+      <div id="um" class="noisy">
+         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+               <linearGradient id="header-shape-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
+                  <stop offset="0%" stop-color="var(--color-stop)" />
+                  <stop offset="40%" stop-color="var(--color-stop)" />
+                  <stop offset="100%" stop-color="var(--color-bot)" />
+               </linearGradient>
+            </defs>
+            <path fill="url(#header-shape-gradient)" d="M42.8,-53.2C55.9,-40,67.3,-27,72.9,-10.5C78.6,5.9,78.6,25.6,68.8,37C59,48.4,39.4,51.5,22.4,54.8C5.3,58.1,-9.2,61.7,-26.6,60.7C-44,59.8,-64.2,54.3,-72,41.3C-79.8,28.4,-75.1,8,-66.9,-7.2C-58.8,-22.3,-47.1,-32.2,-35.3,-45.7C-23.6,-59.1,-11.8,-76.1,1.5,-77.9C14.9,-79.8,29.7,-66.5,42.8,-53.2Z" transform="translate(100 100)"/>
+         </svg>
+      </div>
+      <div id="dois" class="noisy">
+         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+               <linearGradient id="header-shape-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
+                  <stop offset="0%" stop-color="var(--color-stop)" />
+                  <stop offset="30%" stop-color="var(--color-stop)" />
+                  <stop offset="100%" stop-color="var(--color-bot)" />
+               </linearGradient>
+            </defs>
+            <path fill="url(#header-shape-gradient)" d="M27.8,-39.9C34.4,-27.7,36.7,-17.3,43.7,-3.8C50.7,9.6,62.3,26.1,59,36.3C55.8,46.4,37.7,50.2,23.2,49.1C8.7,48.1,-2.3,42.2,-12.3,37.1C-22.3,32,-31.3,27.6,-42.9,19.2C-54.4,10.7,-68.6,-2,-70,-15.6C-71.5,-29.3,-60.3,-43.9,-46.6,-54.8C-32.8,-65.6,-16.4,-72.7,-2.9,-69.3C10.7,-65.9,21.3,-52,27.8,-39.9Z" transform="translate(100 100)" />
+         </svg>
+      </div>
+      <div id="tres" class="noisy">
+         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+               <linearGradient id="header-shape-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
+                  <stop offset="0%" stop-color="var(--color-stop)" />
+                  <stop offset="30%" stop-color="var(--color-stop)" />
+                  <stop offset="100%" stop-color="var(--color-bot)" />
+               </linearGradient>
+            </defs>
+            <path fill="url(#header-shape-gradient)" d="M23.9,-27.7C35.7,-18.5,53.5,-15.5,58.1,-7.6C62.7,0.4,54.2,13.4,46.4,26.6C38.6,39.9,31.4,53.4,19.2,61.7C6.9,70.1,-10.5,73.4,-24.8,68.1C-39,62.9,-50.2,49.1,-49.8,35.6C-49.5,22.1,-37.7,8.8,-32.1,-2.7C-26.6,-14.2,-27.3,-23.7,-23,-34.3C-18.7,-44.8,-9.3,-56.3,-1.7,-54.4C6,-52.4,12,-36.9,23.9,-27.7Z" transform="translate(100 100)" />
+         </svg>
+      </div>
+      <div id="quatro" class="noisy">
+         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+               <linearGradient id="header-shape-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
+                  <stop offset="0%" stop-color="var(--color-stop)" />
+                  <stop offset="30%" stop-color="var(--color-stop)" />
+                  <stop offset="100%" stop-color="var(--color-bot)" />
+               </linearGradient>
+            </defs>
+            <path fill="url(#header-shape-gradient)" d="M53,-50.2C65.8,-52.4,71.3,-33,67.9,-17.2C64.6,-1.3,52.3,10.9,40,14.6C27.7,18.4,15.5,13.6,3.4,24.6C-8.6,35.6,-20.5,62.3,-31.4,66.8C-42.3,71.3,-52.2,53.6,-57.2,36.9C-62.2,20.2,-62.3,4.6,-60.9,-12C-59.4,-28.5,-56.4,-46,-46,-44.2C-35.6,-42.4,-17.8,-21.3,1.2,-22.7C20.1,-24.1,40.2,-47.9,53,-50.2Z" transform="translate(100 100)" />
+         </svg>
+      </div>
+      <div id="cinco" class="noisy">
+         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+               <linearGradient id="header-shape-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
+                  <stop offset="0%" stop-color="var(--color-stop)" />
+                  <stop offset="30%" stop-color="var(--color-stop)" />
+                  <stop offset="100%" stop-color="var(--color-bot)" />
+               </linearGradient>
+            </defs>
+            <path fill="url(#header-shape-gradient)" d="M35.6,-38.1C43.1,-36,44.2,-22,48.1,-7.4C51.9,7.2,58.5,22.4,53.3,30.3C48.1,38.1,31.2,38.7,19.3,35.3C7.5,31.9,0.6,24.4,-6.4,20.6C-13.5,16.7,-20.8,16.5,-29.5,11.9C-38.2,7.4,-48.3,-1.5,-48.6,-10C-48.8,-18.6,-39.2,-26.9,-29.4,-28.6C-19.7,-30.2,-9.8,-25.3,2.1,-27.8C14,-30.2,28,-40.1,35.6,-38.1Z" transform="translate(100 100)" />
+         </svg>
+      </div>
+      <div id="seis" class="noisy">
+         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+               <linearGradient id="header-shape-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
+                  <stop offset="0%" stop-color="var(--color-stop)" />
+                  <stop offset="30%" stop-color="var(--color-stop)" />
+                  <stop offset="100%" stop-color="var(--color-bot)" />
+               </linearGradient>
+            </defs>
+            <path fill="url(#header-shape-gradient)" d="M23.3,-19.7C37.2,-16.2,60.2,-15.4,68,-6.7C75.9,2.1,68.7,18.8,55.2,22.2C41.7,25.6,21.9,15.8,10,14.5C-1.9,13.2,-6,20.5,-12.3,22.9C-18.6,25.3,-27.1,23,-28.3,17.8C-29.4,12.7,-23.2,4.9,-22.7,-5C-22.2,-14.9,-27.4,-26.9,-24.5,-32.4C-21.7,-37.9,-10.9,-36.9,-3.1,-33.3C4.7,-29.6,9.5,-23.3,23.3,-19.7Z" transform="translate(100 100)" />
+         </svg>
+      </div>
+      <div id="embreve">
+         <h1>EM BREVE</h1>
+         <h2>Site em construção</h2>
+      </div>
+   </body>
+</html>
