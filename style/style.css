@@ -28,7 +28,9 @@
     --rodape-size-icone: 5vw;
     --rodape-margin-icone: 3vw;
     --rodape-titulo-padding: 10vh;
-    --rodape-text-line-height: 1vh;
+    --rodape-text-line-height: 5vh;
+    --font-size-rodape-texto: 3vw;
+    --font-size-direitos-autorais: 2.5vw;
 }
 @media (min-width: 768px) {
 	:root {
@@ -46,30 +48,12 @@
 	    --padding-linhas: 0vh;
 	    /* RODAPÉ */
 	    --font-size-rodape-titulo: 3vw;
+	    --font-size-rodape-texto: 2vw;
 	    --rodape-size-icone: 3vw;
 	    --rodape-margin-icone: 0.5vw;
-	    --rodape-titulo-padding: 0vh;
+	    --rodape-titulo-padding: 8vh;
 	    --rodape-text-line-height: 5vh;
-	}
-}
-@media (min-width: 768px) and (orientation: portrait) {
-	:root {
-	    /* NAVBAR */
-	    --fontsize-navbar-link: 1.5vw;
-	    /* CAROUSEL */
-	    --font-size-carousel-title: 7vw;
-	    --font-size-carousel-subtitle: 3vw;
-	    /* NOVIDADES */
-	    --margin-novidades-titulo: 5vh;
-	    --fontsize-novidades-titulo: 5vw;
-	    /* INFORMAÇOES */
-	    --padding-informacoes: 5vh;
-	    --font-size-texto-informacoes: 2vw;
-	    --size-icone-informacoes: 6vw;
-	    /* RODAPÉ */
-	    --font-size-rodape-titulo: 2vw;
-	    --rodape-size-icone: 2vw;
-	    --rodape-text-line-height: 1vh;
+	    --font-size-direitos-autorais: 2vw;
 	}
 }
 @media (min-width: 1360px) {
@@ -89,7 +73,10 @@
 	    /* RODAPÉ */
 	    --font-size-rodape-titulo: 2vw;
 	    --rodape-size-icone: 2vw;
-	    --rodape-text-line-height: 1vh;
+	    --rodape-text-line-height: 3vh;
+	    --font-size-rodape-texto: 1.5vw;
+	    --rodape-titulo-padding: 0vh;
+	    --font-size-direitos-autorais: 1.5vw;
 	}
 }
 @media (min-width: 1920px) {
@@ -98,7 +85,7 @@
 	    --fontsize-navbar-link: 1.2vw;
 	    /* CAROUSEL */
 	    --font-size-carousel-title: 5vw;
-	    --font-size-carousel-subtitle: 1vw;
+	    --font-size-carousel-subtitle: 1.5vw;
 	    /* NOVIDADES */
 	    --fontsize-novidades-titulo: 3vw;
 	    /* INFORMAÇOES */
@@ -108,6 +95,9 @@
 	    /* RODAPÉ */
 	    --font-size-rodape-titulo: 1.5vw;
 	    --rodape-size-icone: 1.3vw;
+	    --rodape-text-line-height: 2vh;
+	    --font-size-rodape-texto: 1vw;
+	    --font-size-direitos-autorais: 1vw;
 	}
 }
 @media (orientation: portrait) {
@@ -125,11 +115,13 @@
 	    --size-icone-informacoes: 15vw;
 	    --padding-linhas: 5vh;
 	    /* RODAPÉ */
-	    --font-size-rodape-titulo: 6vw;
+	    --font-size-rodape-titulo: 5vw;
 	    --rodape-size-icone: 5vw;
 	    --rodape-margin-icone: 2vw;
 	    --rodape-titulo-padding: 5vh;
 	    --rodape-text-line-height: 3vh;
+    	--font-size-rodape-texto: 3.5vw;
+    	--font-size-direitos-autorais: 3.5vw;
 	}
 }
 * {
@@ -262,6 +254,7 @@
 .rodape-link{
 	text-decoration: none;
 	color: #fff;
+	font-size: var(--font-size-rodape-texto);
 }
 .rodape-link:hover{
 	color: var(--rosa);
@@ -275,7 +268,13 @@
 .rodape-texto{
 	color: #fff;
 	line-height: var(--rodape-text-line-height);
+	font-size: var(--font-size-rodape-texto);
 }
 .rodape-titulo-padding{
 	padding-top: var(--rodape-titulo-padding);
+}
+.direitos-autorais {
+	background-color: var(--rosa);
+	text-align: center;
+	font-size: var(--font-size-direitos-autorais);
 }
