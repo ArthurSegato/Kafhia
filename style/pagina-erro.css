@@ -1,0 +1,188 @@
+:root {
+	/* CORES */
+	--azul: #56CCF2;
+	--azul-escuro: #44a3c1;
+	--preto-flat: #353535;
+	--preto-flat-escuro: #252525;
+	/* LOGO */
+	--margin-logo: 2vh;
+	--size-logo: 30%;
+	/* NAVBAR */
+	--pading-navbar-link: 3vw;
+	--fontsize-navbar-link: 3vw;
+	--height-navbar: 10vh;
+	--heigh-logo: 20vh;
+	/* ERRO */
+	--margin-erro: 25vh;
+	/* RODAPÉ */
+	--padding-rodape: 10vh;
+	--font-size-rodape-titulo: 5vw;
+	--rodape-size-icone: 5vw;
+	--rodape-margin-icone: 3vw;
+	--rodape-titulo-padding: 10vh;
+	--rodape-text-line-height: 5vh;
+	--font-size-rodape-texto: 3vw;
+	--font-size-direitos-autorais: 2.5vw;
+}
+
+@media (min-width: 768px) {
+	 :root {
+		--size-logo: 30%;
+		/* NAVBAR */
+		--fontsize-navbar-link: 2.5vw;
+		/* RODAPÉ */
+		--font-size-rodape-titulo: 3vw;
+		--font-size-rodape-texto: 2vw;
+		--rodape-size-icone: 3vw;
+		--rodape-margin-icone: 0.5vw;
+		--rodape-titulo-padding: 8vh;
+		--rodape-text-line-height: 5vh;
+		--font-size-direitos-autorais: 2vw;
+	}
+}
+
+@media (min-width: 1360px) {
+	 :root {
+		--size-logo: 20%;
+		/* NAVBAR */
+		--fontsize-navbar-link: 1.5vw;
+		/* RODAPÉ */
+		--padding-rodape: 5vh;
+		--font-size-rodape-titulo: 2vw;
+		--rodape-size-icone: 2vw;
+		--rodape-text-line-height: 3vh;
+		--font-size-rodape-texto: 1.5vw;
+		--rodape-titulo-padding: 0vh;
+		--font-size-direitos-autorais: 1.5vw;
+	}
+}
+
+@media (min-width: 1920px) {
+	 :root {
+		--size-logo: 20%;
+		/* NAVBAR */
+		--fontsize-navbar-link: 1.2vw;
+		/* RODAPÉ */
+		--font-size-rodape-titulo: 1.5vw;
+		--rodape-size-icone: 1.3vw;
+		--rodape-text-line-height: 2vh;
+		--font-size-rodape-texto: 1vw;
+		--font-size-direitos-autorais: 1vw;
+	}
+}
+
+@media (orientation: portrait) {
+	 :root {
+		--size-logo: 50%;
+		/* NAVBAR */
+		--fontsize-navbar-link: 4vw;
+		/* RODAPÉ */
+		--padding-rodape: 10vh;
+		--font-size-rodape-titulo: 5vw;
+		--rodape-size-icone: 5vw;
+		--rodape-margin-icone: 2vw;
+		--rodape-titulo-padding: 5vh;
+		--rodape-text-line-height: 3vh;
+		--font-size-rodape-texto: 3.5vw;
+		--font-size-direitos-autorais: 3.5vw;
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: "Raleway", sans-serif;
+}
+
+.logo {
+	width: 100%;
+	margin-bottom: var(--margin-logo);
+	margin-top: var(--margin-logo);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo img {
+	width: var(--size-logo);
+}
+
+.navbar {
+	z-index: 10;
+	min-height: var(--height-navbar);
+	box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.nav-link {
+	font-weight: 400 !important;
+	font-size: var(--fontsize-navbar-link);
+	padding-right: var(--pading-navbar-link) !important;
+	padding-left: var(--pading-navbar-link) !important;
+	color: var(--azul) !important;
+}
+
+.nav-link:hover {
+	color: var(--azul-escuro) !important;
+}
+
+#erro {
+	text-align: center;
+	margin-top: var(--margin-erro);
+	margin-bottom: var(--margin-erro);
+}
+
+.underline {
+	background-image: linear-gradient(90deg, #56CCF2, #2F80ED);
+	background-position: bottom;
+	background-size: 100% 30%;
+	background-repeat: no-repeat;
+}
+
+#rodape {
+	text-align: center;
+	padding-top: var(--padding-rodape);
+	padding-bottom: var(--padding-rodape);
+	background-color: var(--preto-flat);
+}
+
+.rodape-titulo {
+	color: #fff;
+	font-weight: 600;
+	font-size: var(--font-size-rodape-titulo);
+}
+
+.rodape-link {
+	text-decoration: none;
+	color: #fff;
+	font-size: var(--font-size-rodape-texto);
+	transition: .3s ease-in-out;
+}
+
+.rodape-link:hover {
+	color: var(--azul);
+	transition: .3s ease-in-out;
+}
+
+.rodape-link svg {
+	width: var(--rodape-size-icone);
+	height: var(--rodape-size-icone);
+	margin-left: var(--rodape-margin-icone);
+	margin-right: var(--rodape-margin-icone);
+}
+
+.rodape-texto {
+	color: #fff;
+	line-height: var(--rodape-text-line-height);
+	font-size: var(--font-size-rodape-texto);
+}
+
+.rodape-titulo-padding {
+	padding-top: var(--rodape-titulo-padding);
+}
+
+.direitos-autorais {
+	background-color: var(--azul);
+	text-align: center;
+	font-size: var(--font-size-direitos-autorais);
+}

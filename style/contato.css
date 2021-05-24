@@ -12,20 +12,15 @@
     --fontsize-navbar-link: 3vw;
     --height-navbar: 10vh;
     --heigh-logo: 20vh;
-    /* CAROUSEL */
-    --font-size-carousel-title: 10vw;
-    --font-size-carousel-subtitle: 3vw;
-    --height-carouselitem: 100%;
-    /* NOVIDADES */
-    --margin-novidades-titulo: 10vh;
-    --fontsize-novidades-titulo: 8vw;
-    /* INFORMAÇOES */
-    --padding-informacoes: 10vh;
-    --margin-informacoes: 5vh;
-    --margin-bottom-icone-svg: 2vh;
-    --font-size-texto-informacoes: 4vw;
-    --size-icone-informacoes: 10vw;
-    --padding-linhas: 10vh;
+    /* CONTATO */
+    --margin-contato: 10vh;
+    --margin-contato-titulo: 5vh;
+    --font-size-contato-titulo: 6vw;
+    --font-size-contato-subtitulo: 4vw;
+    --font-size-contato-conteudo: 3vw;
+    --margin-contato-rows: 5vh;
+    --size-contato-icone: 5vw;
+    --margin-contato-icone: 1vw;
     /* RODAPÉ */
     --padding-rodape: 10vh;
     --font-size-rodape-titulo: 5vw;
@@ -42,16 +37,12 @@
         --size-logo: 30%;
         /* NAVBAR */
         --fontsize-navbar-link: 2.5vw;
-        /* CAROUSEL */
-        --font-size-carousel-title: 10vw;
-        --font-size-carousel-subtitle: 3vw;
-        /* NOVIDADES */
-        --margin-novidades-titulo: 8vh;
-        --fontsize-novidades-titulo: 5vw;
-        /* INFORMAÇOES */
-        --font-size-texto-informacoes: 2vw;
-        --size-icone-informacoes: 8vw;
-        --padding-linhas: 0vh;
+        /* CONTATO*/
+        --font-size-contato-titulo: 4vw;
+        --font-size-contato-subtitulo: 2.5vw;
+        --font-size-contato-conteudo: 1.5vw;
+        --size-contato-icone: 2vw;
+        --margin-contato-icone: 1vw;
         /* RODAPÉ */
         --font-size-rodape-titulo: 3vw;
         --font-size-rodape-texto: 2vw;
@@ -68,16 +59,12 @@
         --size-logo: 20%;
         /* NAVBAR */
         --fontsize-navbar-link: 1.5vw;
-        /* CAROUSEL */
-        --font-size-carousel-title: 7vw;
-        --font-size-carousel-subtitle: 3vw;
-        /* NOVIDADES */
-        --margin-novidades-titulo: 5vh;
-        --fontsize-novidades-titulo: 5vw;
-        /* INFORMAÇOES */
-        --padding-informacoes: 5vh;
-        --font-size-texto-informacoes: 2vw;
-        --size-icone-informacoes: 6vw;
+        /* CONTATO*/
+        --font-size-contato-titulo: 4vw;
+        --font-size-contato-subtitulo: 2.5vw;
+        --font-size-contato-conteudo: 1.5vw;
+        --size-contato-icone: 2vw;
+        --margin-contato-icone: 1vw;
         /* RODAPÉ */
         --padding-rodape: 5vh;
         --font-size-rodape-titulo: 2vw;
@@ -94,15 +81,12 @@
         --size-logo: 20%;
         /* NAVBAR */
         --fontsize-navbar-link: 1.2vw;
-        /* CAROUSEL */
-        --font-size-carousel-title: 5vw;
-        --font-size-carousel-subtitle: 1.5vw;
-        /* NOVIDADES */
-        --fontsize-novidades-titulo: 3vw;
-        /* INFORMAÇOES */
-        --font-size-texto-informacoes: 1.5vw;
-        --size-icone-informacoes: 4vw;
-        --padding-linhas: 0vh;
+        /* CONTATO*/
+        --font-size-contato-titulo: 3.5vw;
+        --font-size-contato-subtitulo: 2vw;
+        --font-size-contato-conteudo: 1.2vw;
+        --size-contato-icone: 2vw;
+        --margin-contato-icone: 1vw;
         /* RODAPÉ */
         --font-size-rodape-titulo: 1.5vw;
         --rodape-size-icone: 1.3vw;
@@ -117,17 +101,12 @@
         --size-logo: 50%;
         /* NAVBAR */
         --fontsize-navbar-link: 4vw;
-        /* CAROUSEL */
-        --font-size-carousel-title: 15vw;
-        --font-size-carousel-subtitle: 5vw;
-        /* NOVIDADES */
-        --margin-novidades-titulo: 5vh;
-        --fontsize-novidades-titulo: 10vw;
-        /* INFORMAÇOES */
-        --padding-informacoes: 10vh;
-        --font-size-texto-informacoes: 5vw;
-        --size-icone-informacoes: 15vw;
-        --padding-linhas: 5vh;
+        /* CONTATO*/
+        --font-size-contato-titulo: 10vw;
+        --font-size-contato-subtitulo: 7vw;
+        --font-size-contato-conteudo: 5vw;
+        --size-contato-icone: 7vw;
+        --margin-contato-icone: 2.5vw;
         /* RODAPÉ */
         --padding-rodape: 10vh;
         --font-size-rodape-titulo: 5vw;
@@ -145,10 +124,6 @@
     padding: 0;
     border: 0;
     font-family: "Raleway", sans-serif;
-}
-
-#home {
-    min-height: 100vh;
 }
 
 .logo {
@@ -182,110 +157,55 @@
     color: var(--azul-escuro) !important;
 }
 
-.carousel-item {
-    height: 70vh !important;
-}
-
-.carrosel-imagem {
+#contato{
+    width: 100%;
     height: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center bottom;
-    background-size: cover;
+    margin-top: var(--margin-contato);
 }
 
-.carrosel {
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-}
-
-.carousel-caption {
-    top: 50%;
-    transform: translate(0, -50%);
-    bottom: inherit !important;
-}
-
-.carousel-caption h5 {
-    font-size: var(--font-size-carousel-title);
-}
-
-.carousel-caption p {
-    font-size: var(--font-size-carousel-subtitle);
-}
-
-.novidades-titulo {
+.contato-titulo{
     text-align: center;
     font-weight: 200;
-    color: var(--preto-flat);
-    font-size: var(--fontsize-novidades-titulo);
-    margin-top: var(--margin-novidades-titulo);
-    margin-bottom: var(--margin-novidades-titulo);
+    font-size: var(--font-size-contato-titulo);
+    margin-bottom: var(--margin-contato-titulo);
 }
 
-.card-link {
+.contato-rows{
+    margin-bottom: var(--margin-contato-rows);
+}
+
+.contato-rows h2{
+    font-size: var(--font-size-contato-subtitulo);
+}
+
+.contato-conteudo{
+    color: var(--preto-flat);
+    font-size: var(--font-size-contato-conteudo);
     text-decoration: none;
+    margin-bottom: 100px;
 }
 
-.card {
-    transition: .3s ease-in-out;
-}
-
-.card:hover {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
-    transition: .3s ease-in-out;
-}
-
-.card-title,
-.card-title:visited {
+.contato-icone{
     color: var(--preto-flat);
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    margin-left: var(--margin-contato-icone);
+    margin-right: var(--margin-contato-icone);
+}
+.contato-icone svg{
+    width: var(--size-contato-icone);
+    height: var(--size-contato-icone);
 }
 
-.card-price,
-.card-link:visited {
-    color: var(--azul);
-    transition: .3s ease-in-out;
+.google-maps{
+    width: 100%;
+    height: 50vh;
 }
 
-.card-link:hover .card-price {
-    color: var(--azul-escuro);
-    transition: .3s ease-in-out;
-}
-
-.card-link:hover .card-title {
-    color: var(--preto-flat-escuro);
-}
-
-#informacoes {
-    background-image: url(../images/image4.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: var(--margin-informacoes);
-    padding-top: var(--padding-informacoes);
-    padding-bottom: var(--padding-informacoes);
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-}
-
-.icone {
-    text-align: center;
-}
-
-.icone svg {
-    height: var(--size-icone-informacoes);
-    width: var(--size-icone-informacoes);
-    color: var(--azul);
-    margin-bottom: var(--margin-bottom-icone-svg);
-}
-
-.icone p {
-    color: #fff;
-    font-weight: 600;
-    font-size: var(--font-size-texto-informacoes);
-}
-
-.linha {
-    padding-top: var(--padding-linhas);
-    padding-bottom: var(--padding-linhas);
+.google-maps iframe{
+    width: 100%;
+    height: 100%;
 }
 
 #rodape {
