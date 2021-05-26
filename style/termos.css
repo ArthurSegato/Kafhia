@@ -1,0 +1,227 @@
+:root {
+    /* CORES */
+    --azul: #56CCF2;
+    --azul-escuro: #44a3c1;
+    --preto-flat: #353535;
+    --preto-flat-escuro: #252525;
+    /* LOGO */
+    --logo-tamanho: 30%;
+    --logo-margin: 2vh;
+    /* NAVBAR */
+    --navbar-link-tamanho-font: 3vw;
+    --navbar-altura: 10vh;
+    --navbar-link-padding: 3vw;
+    /* DUVIDAS */
+    --termos-e-duvidas-margin: 10vh;
+    --titulo-margin: 5vh;
+    --titulo-tamanho-fonte: 6vw;
+    --subtitulo-tamanho-fonte: 4vw;
+    --texto-tamanho-fonte: 3vw;
+    /* RODAPÉ */
+    --rodape-titulo-tamanho-fonte: 5vw;
+    --rodape-texto-tamanho-fonte: 3vw;
+    --rodape-texto-tamanho-linha: 5vh;
+    --rodape-icone-tamanho: 5vw;
+    --rodape-icone-margin: 3vw;
+    --rodape-titulo-padding: 10vh;
+    --rodape-padding: 10vh;
+    /* DIREITOS */
+    --direitos-autorais-tamanho-texto: 2.5vw;
+}
+
+@media (min-width: 768px) {
+     :root {
+        --logo-tamanho: 30%;
+        /* NAVBAR */
+        --navbar-link-tamanho-font: 2.5vw;
+        /* DUVIDAS */
+        --termos-e-duvidas-margin: 10vh;
+        --titulo-margin: 5vh;
+        --titulo-tamanho-fonte: 4vw;
+        --subtitulo-tamanho-fonte: 2.5vw;
+        --texto-tamanho-fonte: 1.5vw;
+        /* RODAPÉ */
+        --rodape-titulo-tamanho-fonte: 3vw;
+        --rodape-texto-tamanho-fonte: 2vw;
+        --rodape-icone-tamanho: 3vw;
+        --rodape-icone-margin: 0.5vw;
+        --rodape-titulo-padding: 8vh;
+        --rodape-texto-tamanho-linha: 5vh;
+        --direitos-autorais-tamanho-texto: 2vw;
+    }
+}
+
+@media (min-width: 1360px) {
+     :root {
+        --logo-tamanho: 20%;
+        /* NAVBAR */
+        --navbar-link-tamanho-font: 1.5vw;
+        /* DUVIDAS */
+        --termos-e-duvidas-margin: 10vh;
+        --titulo-margin: 5vh;
+        --titulo-tamanho-fonte: 4vw;
+        --subtitulo-tamanho-fonte: 2.5vw;
+        --texto-tamanho-fonte: 1.5vw;
+        /* RODAPÉ */
+        --rodape-padding: 5vh;
+        --rodape-titulo-tamanho-fonte: 2vw;
+        --rodape-icone-tamanho: 2vw;
+        --rodape-texto-tamanho-linha: 3vh;
+        --rodape-texto-tamanho-fonte: 1.5vw;
+        --rodape-titulo-padding: 0vh;
+        --direitos-autorais-tamanho-texto: 1.5vw;
+    }
+}
+
+@media (min-width: 1920px) {
+     :root {
+        --logo-tamanho: 20%;
+        /* NAVBAR */
+        --navbar-link-tamanho-font: 1.2vw;
+        /* DUVIDAS */
+        --termos-e-duvidas-margin: 10vh;
+        --titulo-margin: 3vh;
+        --titulo-tamanho-fonte: 3vw;
+        --subtitulo-tamanho-fonte: 2vw;
+        --texto-tamanho-fonte: 1vw;
+        /* RODAPÉ */
+        --rodape-titulo-tamanho-fonte: 1.5vw;
+        --rodape-icone-tamanho: 1.3vw;
+        --rodape-texto-tamanho-linha: 2vh;
+        --rodape-texto-tamanho-fonte: 1vw;
+        --direitos-autorais-tamanho-texto: 1vw;
+    }
+}
+
+@media (orientation: portrait) {
+     :root {
+        --logo-tamanho: 50%;
+        /* NAVBAR */
+        --navbar-link-tamanho-font: 4vw;
+        /* DUVIDAS */
+        --termos-e-duvidas-margin: 10vh;
+        --titulo-margin: 5vh;
+        --titulo-tamanho-fonte: 10vw;
+        --subtitulo-tamanho-fonte: 7vw;
+        --texto-tamanho-fonte: 4vw;
+        /* RODAPÉ */
+        --rodape-padding: 10vh;
+        --rodape-titulo-tamanho-fonte: 5vw;
+        --rodape-icone-tamanho: 5vw;
+        --rodape-icone-margin: 2vw;
+        --rodape-titulo-padding: 5vh;
+        --rodape-texto-tamanho-linha: 3vh;
+        --rodape-texto-tamanho-fonte: 3.5vw;
+        --direitos-autorais-tamanho-texto: 3.5vw;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+.logo {
+    width: 100%;
+    margin-bottom: var(--logo-margin);
+    margin-top: var(--logo-margin);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: var(--logo-tamanho);
+}
+
+.navbar {
+    z-index: 10;
+    min-height: var(--navbar-altura);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.nav-link {
+    font-weight: 400 !important;
+    font-size: var(--navbar-link-tamanho-font);
+    padding-right: var(--navbar-link-padding) !important;
+    padding-left: var(--navbar-link-padding) !important;
+    color: var(--azul) !important;
+}
+
+.nav-link:hover {
+    color: var(--azul-escuro) !important;
+}
+
+#termos-e-duvidas{
+    margin-top: var(--termos-e-duvidas-margin);
+    margin-bottom: var(--termos-e-duvidas-margin);
+}
+#termos-e-duvidas h1{
+    text-align: center;
+    font-weight: 200;
+    font-size: var(--titulo-tamanho-fonte);
+    margin-bottom: var(--titulo-margin);
+}
+
+#termos-e-duvidas h2{
+    font-size: var(--subtitulo-tamanho-fonte);
+}
+
+#termos-e-duvidas p{
+    font-size: var(--texto-tamanho-fonte);
+    text-align: justify;
+}
+
+.margin-termos{
+    margin-top: var(--termos-e-duvidas-margin);
+}
+
+#rodape {
+    text-align: center;
+    padding-top: var(--rodape-padding);
+    padding-bottom: var(--rodape-padding);
+    background-color: var(--preto-flat);
+}
+
+.rodape-titulo {
+    color: #fff;
+    font-weight: 600;
+    font-size: var(--rodape-titulo-tamanho-fonte);
+}
+
+.rodape-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: var(--rodape-texto-tamanho-fonte);
+    transition: .3s ease-in-out;
+}
+
+.rodape-link:hover {
+    color: var(--azul);
+    transition: .3s ease-in-out;
+}
+
+.rodape-link svg {
+    width: var(--rodape-icone-tamanho);
+    height: var(--rodape-icone-tamanho);
+    margin-left: var(--rodape-icone-margin);
+    margin-right: var(--rodape-icone-margin);
+}
+
+.rodape-texto {
+    color: #fff;
+    line-height: var(--rodape-texto-tamanho-linha);
+    font-size: var(--rodape-texto-tamanho-fonte);
+}
+
+.rodape-titulo-padding {
+    padding-top: var(--rodape-titulo-padding);
+}
+
+.direitos-autorais {
+    background-color: var(--azul);
+    text-align: center;
+    font-size: var(--direitos-autorais-tamanho-texto);
+}
