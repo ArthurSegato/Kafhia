@@ -1,9 +1,8 @@
 :root {
 	/* CORES */
-	--azul: #56CCF2;
-	--azul-escuro: #44a3c1;
+    --azul: #6ea8fe;
+    --azul-escuro: #0d6efd;
 	--preto-flat: #353535;
-	--preto-flat-escuro: #252525;
 	/* LOGO */
 	--margin-logo: 2vh;
 	--size-logo: 30%;
@@ -115,7 +114,6 @@
 }
 
 .nav-link {
-	font-weight: 400 !important;
 	font-size: var(--fontsize-navbar-link);
 	padding-right: var(--pading-navbar-link) !important;
 	padding-left: var(--pading-navbar-link) !important;

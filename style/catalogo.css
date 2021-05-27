@@ -1,9 +1,8 @@
 :root {
     /* CORES */
-    --azul: #56CCF2;
-    --azul-escuro: #44a3c1;
+    --azul: #6ea8fe;
+    --azul-escuro: #0d6efd;
     --preto-flat: #353535;
-    --preto-flat-escuro: #252525;
     /* LOGO */
     --logo-tamanho: 30%;
     --logo-margin: 2vh;
@@ -14,6 +13,7 @@
     /* PRODUTOS */
     --produtos-margin: 10vh;
     --produtos-titulo: 6vw;
+    --menu-margin:  3vh;
     /* RODAPÉ */
     --rodape-titulo-tamanho-fonte: 5vw;
     --rodape-texto-tamanho-fonte: 3vw;
@@ -124,7 +124,6 @@
 }
 
 .nav-link {
-    font-weight: 400 !important;
     font-size: var(--navbar-link-tamanho-font);
     padding-right: var(--navbar-link-padding) !important;
     padding-left: var(--navbar-link-padding) !important;
@@ -134,7 +133,6 @@
 .nav-link:hover {
     color: var(--azul-escuro) !important;
 }
-
 
 #produtos {
     margin-top: var(--produtos-margin);
@@ -149,6 +147,10 @@
 
 .produtos-preco{
     color: var(--azul) !important;
+}
+
+.menu-produtos{
+    margin-bottom: var(--menu-margin);
 }
 
 #rodape {

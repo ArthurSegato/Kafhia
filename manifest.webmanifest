@@ -1,14 +1,14 @@
 {
-    "author": "Arthur Segato",
-    "name": "Arthur Segato",
-    "short_name": "Arthur Segato",
-    "description": "Hello! i am arthur segato, a game developer interested in web development and networking!",
-    "lang": "en-US",
-    "start_url": "https://arthursegato.com/",
+    "author": "Kafhia",
+    "name": "Kafhia",
+    "short_name": "Kafhia",
+    "description": "Looks exclusivos, conforto e qualidade. Você sempre linda em todas ocasiões!",
+    "lang": "pt-BR",
+    "start_url": "https://kafhia.com.br/",
     "icons": [
         { "src": "favicon-512.png", "type": "image/png", "sizes": "512x512" }
     ],
-    "theme_color": "#101010",
-    "background_color": "#101010",
+    "theme_color": "#6ea8fe",
+    "background_color": "#6ea8fe",
     "display": "standalone"
 }

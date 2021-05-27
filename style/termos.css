@@ -1,9 +1,8 @@
 :root {
     /* CORES */
-    --azul: #56CCF2;
-    --azul-escuro: #44a3c1;
+    --azul: #6ea8fe;
+    --azul-escuro: #0d6efd;
     --preto-flat: #353535;
-    --preto-flat-escuro: #252525;
     /* LOGO */
     --logo-tamanho: 30%;
     --logo-margin: 2vh;
@@ -143,7 +142,6 @@
 }
 
 .nav-link {
-    font-weight: 400 !important;
     font-size: var(--navbar-link-tamanho-font);
     padding-right: var(--navbar-link-padding) !important;
     padding-left: var(--navbar-link-padding) !important;
@@ -159,6 +157,13 @@
     margin-bottom: var(--termos-e-duvidas-margin);
 }
 #termos-e-duvidas h1{
+    text-align: center;
+    font-weight: 200;
+    font-size: var(--titulo-tamanho-fonte);
+    margin-bottom: var(--titulo-margin);
+}
+
+#termos-e-duvidas h3{
     text-align: center;
     font-weight: 200;
     font-size: var(--titulo-tamanho-fonte);
