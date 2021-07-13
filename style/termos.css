@@ -4,8 +4,8 @@
     --azul-escuro: #0d6efd;
     --preto-flat: #353535;
     /* LOGO */
-    --logo-tamanho: 30%;
-    --logo-margin: 2vh;
+    --logo-tamanho: 20%;
+    --logo-padding: 2vh;
     /* NAVBAR */
     --navbar-link-tamanho-font: 3vw;
     --navbar-altura: 10vh;
@@ -30,7 +30,7 @@
 
 @media (min-width: 768px) {
      :root {
-        --logo-tamanho: 30%;
+        --logo-tamanho: 25%;
         /* NAVBAR */
         --navbar-link-tamanho-font: 2.5vw;
         /* DUVIDAS */
@@ -74,7 +74,7 @@
 
 @media (min-width: 1920px) {
      :root {
-        --logo-tamanho: 20%;
+        --logo-tamanho: 10%;
         /* NAVBAR */
         --navbar-link-tamanho-font: 1.2vw;
         /* DUVIDAS */
@@ -94,7 +94,7 @@
 
 @media (orientation: portrait) {
      :root {
-        --logo-tamanho: 50%;
+        --logo-tamanho: 40%;
         /* NAVBAR */
         --navbar-link-tamanho-font: 4vw;
         /* DUVIDAS */
@@ -124,11 +124,11 @@
 
 .logo {
     width: 100%;
-    margin-bottom: var(--logo-margin);
-    margin-top: var(--logo-margin);
+    margin-top: var(--logo-padding);
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
 }
 
 .logo img {

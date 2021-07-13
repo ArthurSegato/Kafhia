@@ -4,8 +4,8 @@
     --azul-escuro: #0d6efd;
 	--preto-flat: #353535;
 	/* LOGO */
-	--margin-logo: 2vh;
-	--size-logo: 30%;
+	--logo-padding: 2vh;
+	--size-logo: 20%;
 	/* NAVBAR */
 	--pading-navbar-link: 3vw;
 	--fontsize-navbar-link: 3vw;
@@ -26,7 +26,7 @@
 
 @media (min-width: 768px) {
 	 :root {
-		--size-logo: 30%;
+		--size-logo: 25%;
 		/* NAVBAR */
 		--fontsize-navbar-link: 2.5vw;
 		/* RODAPÉ */
@@ -58,7 +58,7 @@
 
 @media (min-width: 1920px) {
 	 :root {
-		--size-logo: 20%;
+		--size-logo: 10%;
 		/* NAVBAR */
 		--fontsize-navbar-link: 1.2vw;
 		/* RODAPÉ */
@@ -72,7 +72,7 @@
 
 @media (orientation: portrait) {
 	 :root {
-		--size-logo: 50%;
+		--size-logo: 40%;
 		/* NAVBAR */
 		--fontsize-navbar-link: 4vw;
 		/* RODAPÉ */
@@ -96,11 +96,11 @@
 
 .logo {
 	width: 100%;
-	margin-bottom: var(--margin-logo);
-	margin-top: var(--margin-logo);
+	margin-top: var(--logo-padding);
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
 }
 
 .logo img {
