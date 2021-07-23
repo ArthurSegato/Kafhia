@@ -11,7 +11,7 @@
     --navbar-altura: 10vh;
     --navbar-link-padding: 3vw;
     /* CAROUSEL */
-    --carrosel-titulo-fonte-tamanho: 10vw;
+    --carrosel-titulo-fonte-tamanho: 6vw;
     --carrosel-subtitulo-fonte-tamanho: 3vw;
     /* NOVIDADES */
     --novidades-titulo-tamanho-fonte: 8vw;
@@ -41,7 +41,7 @@
         /* NAVBAR */
         --navbar-link-tamanho-font: 2.5vw;
         /* CAROUSEL */
-        --carrosel-titulo-fonte-tamanho: 10vw;
+        --carrosel-titulo-fonte-tamanho: 6vw;
         --carrosel-subtitulo-fonte-tamanho: 3vw;
         /* NOVIDADES */
         --novidades-titulo-margin: 8vh;
@@ -67,7 +67,7 @@
         /* NAVBAR */
         --navbar-link-tamanho-font: 1.5vw;
         /* CAROUSEL */
-        --carrosel-titulo-fonte-tamanho: 7vw;
+        --carrosel-titulo-fonte-tamanho: 5vw;
         --carrosel-subtitulo-fonte-tamanho: 3vw;
         /* NOVIDADES */
         --novidades-titulo-margin: 5vh;
@@ -93,7 +93,7 @@
         /* NAVBAR */
         --navbar-link-tamanho-font: 1.2vw;
         /* CAROUSEL */
-        --carrosel-titulo-fonte-tamanho: 5vw;
+        --carrosel-titulo-fonte-tamanho: 4vw;
         --carrosel-subtitulo-fonte-tamanho: 1.5vw;
         /* NOVIDADES */
         --novidades-titulo-tamanho-fonte: 3vw;
@@ -116,7 +116,7 @@
         /* NAVBAR */
         --navbar-link-tamanho-font: 4vw;
         /* CAROUSEL */
-        --carrosel-titulo-fonte-tamanho: 15vw;
+        --carrosel-titulo-fonte-tamanho: 12vw;
         --carrosel-subtitulo-fonte-tamanho: 5vw;
         /* NOVIDADES */
         --novidades-titulo-margin: 5vh;
@@ -203,10 +203,6 @@
 
 .carousel-caption h5 {
     font-size: var(--carrosel-titulo-fonte-tamanho);
-}
-
-.carousel-caption p {
-    font-size: var(--carrosel-subtitulo-fonte-tamanho);
 }
 
 .novidades-titulo {
